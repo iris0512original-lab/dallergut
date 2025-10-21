@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        /*내비게이션 바*/
+        * {
+            margin: 0;
+            padding: 10;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f5e8e0;
+            padding: 5px;
+        }
+
+        .nav-links {
+            font-family: f;
+            list-style: none;
+            display: flex;
+            gap: 60px;
+            padding: 30px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            font-family: 'Courier New';
+            font-weight: bold;
+            /*font-style: normal;*/
+            color: #3e3b39;
+            text-decoration: none;
+            font-size: 22px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #9a877b;
+
+        }
+
+        /*카테고리*/
+
+        .category {
+            font-family:'Courier New', Courier, monospace;
+            list-style: none;
+            /*display: flex;*/
+            gap: 80px;
+            padding: 50px;
+            
+        }
+
+        .category li {
+            padding: 30px;
+            /*display: inline;*/
+        }
+
+        .category a {
+            font-family: 'Courier New';
+            font-weight: bold;
+            /*font-style: normal;*/
+            color: #3e3b39;
+            text-decoration: none;
+            font-size: 22px;
+            transition: color 0.3s ease;
+        }
+
+        .category a:hover {
+            color: #716258;
+
+        }
+
+
+        /*푸터*/
+
+        p {
+            line-height: 1.6; /* 기본값보다 작게 설정하여 줄 간격 줄이기 */
+            font-family: serif;
+            /*font-size: 50;*/
+        }
+
+        #wrap {
+        min-height: 100vh;
+        position: relative;
+        width: 100%;
+        
+        }
+
+
+         section {
+	    padding-bottom: 50px; /* footer의 height값과 동일 */
+        background-color: #f5e8e0;
+        }   
+
+        html, body {
+        margin: 0;
+        padding: 0;
+        }
+
+        footer {
+	    width: 100%;
+	    height: 100px; /* 내용물에 따라 알맞는 값 설정 */
+	    bottom: 0px;
+	    position: bottom;
+        border-top: 1px solid #977e67;
+        padding-top: 15px;
+        color: #42362b;
+        background-color: #f5e8e0;
+        font-size: 15px;
+        }
+
+        footer a {
+        display: inline-block;
+        margin: 0 20px 10px 20px;
+        color: #808080; font-size: 11px;
+        }
+        
+        footer p {
+        text-align: center;
+        margin-top: 0; margin-bottom: 0;   
+        }
+
+        footer p span {
+        display: inline-block;
+        margin-left: 20px;
+        }
+
+
+
+        /*테이블*/
+        table, tr, th, td {
+            /*border: solid 1.5px rgb(0,0,0);*/
+            border-collapse: collapse;
+            padding: 10px
+        
+        }
+
+        table {
+            margin: auto;
+            text-align: center;
+            font-family: serif;
+            font-size: 10px;
+            line-height: 1.5;
+        }
+
+        tr:nth-child(odd) {
+            background-color:#9b887c;
+        }
+
+        tr:nth-child(even) {
+            background-color:#655852;
+            color:#f4e6df;
+        }
+
+
+
+    </style>
+
+    
+
+</head>
+<body bgcolor="#ae9f95">
+
+    <!--내비게이션 바-->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="web.html">
+                <img src="logo2.png" alt="logo"
+                width="230px">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="read.html">Read Us</a></li>
+            <li><a href="dream.html">Dream Yours</a></li>
+            <li><a href="talk.html">Talk to Us</a></li>
+            <li><a href="makers.html">Dream Makers</a></li>
+            <li><a href="notice.html">Notice&nbsp;</a></li>
+        </ul>
+    </nav>
+
+
+    <!--이미지 배너-->
+    <img src="">
+    
+    
+
+    <table>
+        <tr>
+            <!--카테고리-->
+            
+            <td>   
+                <ul class="category">
+                    <li><a href="dream.html">All</a></li>
+                    <li><a href="1f.html">1F</a></li>
+                    <li><a href="2f.html">2F</a></li>
+                    <li><a href="3f.html">3F</a></li>
+                    <li><a href="4f.html">4F</a></li>
+                    <li><a href="5f.html">5F</a></li>
+                </ul>
+            </td>
+
+            <br>
+            <br>
+
+            <!--상품 갤러리-->
+            <td>
+                <table border="0"><!--전체 윤곽 테이블 시작-->
+                <tr valign="top"><!--첫째줄 tr 시작-->
+                <table border="0" bgcolor="#d5c6be"> 
+                    
+
+                    
+
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="co_earth.png" width=100 height="100"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;셀린 글럭</td>
+                        <td><img src="co_king.png" width=100 height="100"><br>호손 데모나</td>
+                        <td><img src="cover.png" width=100 height="100"><br></td>
+                        <td><img src="cover.png" width=100 height="100"><br></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &lt;지구 멸망물 시리즈 5&gt;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &lt;벌거벗은 임금님&gt;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+<!--푸터-->
+    <footer>
+        
+        <p>
+            <span>창립자 : 달러구트 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>ㅣ
+            <span>창립 지원 : 이미예</span><br><br>
+            <span>찾아오는길 : 꿈의 도시 랜드마크를 찾으면, 어느새 도착!</span>
+        </p>
+        
+    </footer>
+
+
+</body>
+</html>

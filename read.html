@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+
+        /*내비게이션 바*/
+        * {
+            margin: 0;
+            padding: 10;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f5e8e0;
+            padding: 5px;
+        }
+
+        .nav-links {
+            font-family: f;
+            list-style: none;
+            display: flex;
+            gap: 60px;
+            padding: 30px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            font-family: 'Courier New';
+            font-weight: bold;
+            /*font-style: normal;*/
+            color: #3e3b39;
+            text-decoration: none;
+            font-size: 22px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #9a877b;
+
+        }
+
+        /*배경 이미지*/
+
+         body {
+        background-image: url('bgread2.png'); /* 배경 이미지 경로 */
+        background-size: 1700px 1700px;
+        background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
+        background-position: top;
+        min-height: 100vh; /* 뷰포트 높이의 100%를 차지하도록 설정 */
+        }
+
+        /*내용*/
+
+        h1 {
+        line-height: 1.14; /* 기본값보다 작게 설정하여 줄 간격 줄이기 */
+        font-family: serif;
+        font-size: 50;
+        }
+
+        p {
+            line-height: 1.4; /* 기본값보다 작게 설정하여 줄 간격 줄이기 */
+            font-family: serif;
+            /*font-size: 50;*/
+        }
+        
+        h2 {
+            line-height: 5;
+        }
+
+        /*층별 안내*/
+
+        h3 {
+            font-family: serif;
+            text-align: center;
+        }
+
+        table, tr, th, td {
+            /*border: solid 1.5px rgb(0,0,0);*/
+            border-collapse: collapse;
+            padding: 30px;
+            margin: auto;
+            font-family: serif;
+            font-size: 30px;
+            text-align: left;
+            color: #42362b;
+        }
+
+        /*tr:nth-child(odd) {
+        background-color: #655852; 홀수 행 배경색
+        opacity: 0.8;
+        }
+        tr:nth-child(even) {
+        background-color: #9b887c; 짝수 행 배경색 
+        opacity: 0.8;
+        }*/
+
+        tr.colored:nth-child(odd){
+        color:#f4e6df;
+        background-color: #655852; /* 홀수 행 배경색 */
+        opacity: 0.8;
+        }
+
+        tr.colored:nth-child(even){
+        color:#2f231b;
+        background-color: #9b887c; /* 짝수 행 배경색 */
+        opacity: 0.8;
+        }
+
+        
+
+        /*푸터*/
+        #wrap {
+        min-height: 100vh;
+        position: relative;
+        width: 100%;
+        
+        }
+
+
+         section {
+	    padding-bottom: 50px; /* footer의 height값과 동일 */
+        background-color: #f5e8e0;
+        }   
+
+        html, body {
+        margin: 0;
+        padding: 0;
+        }
+
+        footer {
+	    width: 100%;
+	    height: 100px; /* 내용물에 따라 알맞는 값 설정 */
+	    bottom: 0px;
+	    position: bottom;
+        border-top: 1px solid #977e67;
+        padding-top: 15px;
+        color: #42362b;
+        background-color: #f5e8e0;
+        font-size: 15px;
+        }
+
+        footer a {
+        display: inline-block;
+        margin: 0 20px 10px 20px;
+        color: #808080; font-size: 11px;
+        }
+        
+        footer p {
+        text-align: center;
+        margin-top: 0; margin-bottom: 0;   
+        }
+
+        footer p span {
+        display: inline-block;
+        margin-left: 20px;
+        }
+
+        
+
+
+    </style>
+
+    
+
+</head>
+<body>
+
+
+    <!--내비게이션 바-->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="web.html">
+                <img src="logo2.png" alt="logo"
+                width="230px">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="read.html">Read Us</a></li>
+            <li><a href="dream.html">Dream Yours</a></li>
+            <li><a href="talk.html">Talk to Us</a></li>
+            <li><a href="makers.html">Dream Makers</a></li>
+            <li><a href="notice.html">Notice&nbsp;</a></li>
+        </ul>
+    </nav>
+
+    
+
+
+    <!--내용-->
+    
+    <h1><br><br><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
+        달러구트 꿈 백화점
+    </h1>
+    <br>
+    <br>
+    <p style="font-size: 18px; color:#f4e6df;">
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        시간의 신의 세 번째 제자의 후손,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        달러구트가 직접 운영하는 꿈 상점입니다. 
+        <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        도시의 랜드마크와도 같은 백화점은 수많은 손님들의 행복한 숙면을 위해 언제나 노력하고 있습니다.
+    </p>
+
+    <h2>
+        <br><br><br><br><br>
+    </h2>
+
+    
+
+    <h3>
+        층별 안내
+    </h3>
+    <br>
+    <table>
+        <tr class="colored">
+            <td style="color:#f4e6df">1F</td>
+            <td style="color:#f4e6df; font-size:large;">달러구트의 베스트셀러 꿈들이 진열되어 있습니다. 전설의 꿈 제작자들의 꿈부터 특수한 꿈들까지, 전부 꿈꿔보세요.</td>
+        </tr>
+        <tr class="colored">
+            <td style="color:#2f231b">2F</td>
+            <td style="color:#2f231b; font-size:large;">평범한 일상을 담은 꿈들이 진열되어 있습니다. 소소한 행복의 기억을 되살려 보세요.</td>
+        </tr>
+        <tr class="colored">
+            <td style="color:#f4e6df">3F</td>
+            <td style="color:#f4e6df; font-size:large;">판타지, 블록버스터 꿈들이 진열되어 있습니다. 영화속 주인공이 되어 꿈같은 밤을 보내세요.</td>
+        </tr>
+        <tr class="colored">
+            <td style="color:#2f231b;">4F</td>
+            <td style="color:#2f231b; font-size:large;">낮잠용 꿈들이 진열되어 있습니다. 동물들도 대환영!</td>
+        </tr>
+        <tr class="colored">
+            <td style="color:#f4e6df">5F</td>
+            <td style="color:#f4e6df; font-size:large;">달러구트의 훌륭한 꿈들을 훌륭한 가격에!<br>
+                상시할인 꿈들이 진열되어 있습니다. 운이 좋다면, 전설의 꿈을 값싼 가격에 꿔볼 기회가 생길지도 모릅니다.</td>
+        </tr>
+    </table>
+
+
+
+
+<!--푸터-->
+    <footer>
+        
+        <p style="font-size: 50">
+            <span>창립자 : 달러구트 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>ㅣ
+            <span>창립 지원 : 이미예</span><br><br>
+            <span>찾아오는길 : 꿈의 도시 랜드마크를 찾으면, 어느새 도착!</span>
+        </p>
+        
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        /*내비게이션 바*/
+        * {
+            margin: 0;
+            padding: 10;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f5e8e0;
+            padding: 5px;
+        }
+
+        .nav-links {
+            font-family: f;
+            list-style: none;
+            display: flex;
+            gap: 60px;
+            padding: 30px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            font-family: 'Courier New';
+            font-weight: bold;
+            /*font-style: normal;*/
+            color: #3e3b39;
+            text-decoration: none;
+            font-size: 22px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #9a877b;
+
+        }
+
+
+
+
+        /*이미지 배너*/
+        .slider {
+        width: 100%;                                 
+        overflow: hidden;
+        position: relative;
+        }
+
+        .slide {
+        float: left;
+        width: 100%;
+        position: relative;
+        }
+
+        .img {
+        width: 100%;
+        height: auto;                                                        
+        }
+
+        div {
+            text-align: center;
+        }
+
+        
+
+
+
+        /*푸터*/
+
+        p {
+            line-height: 1.6; /* 기본값보다 작게 설정하여 줄 간격 줄이기 */
+            font-family: serif;
+            /*font-size: 50;*/
+        }
+
+        #wrap {
+        min-height: 100vh;
+        position: relative;
+        width: 100%;
+        
+        }
+
+
+         section {
+	    padding-bottom: 50px; /* footer의 height값과 동일 */
+        background-color: #f5e8e0;
+        }   
+
+        html, body {
+        margin: 0;
+        padding: 0;
+        }
+
+        footer {
+	    width: 100%;
+	    height: 100px; /* 내용물에 따라 알맞는 값 설정 */
+	    bottom: 0px;
+	    position: bottom;
+        border-top: 1px solid #977e67;
+        padding-top: 15px;
+        color: #42362b;
+        background-color: #f5e8e0;
+        font-size: 15px;
+        }
+
+        footer a {
+        display: inline-block;
+        margin: 0 20px 10px 20px;
+        color: #808080; font-size: 11px;
+        }
+        
+        footer p {
+        text-align: center;
+        margin-top: 0; margin-bottom: 0;   
+        }
+
+        footer p span {
+        display: inline-block;
+        margin-left: 20px;
+        }
+
+    </style>
+
+    
+
+</head>
+<body>
+
+    <div id="'wrap">
+        <section>
+    <!--내비게이션 바-->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="web.html">
+                <img src="logo2.png" alt="logo"
+                width="230px">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="read.html">Read Us</a></li>
+            <li><a href="dream.html">Dream Yours</a></li>
+            <li><a href="talk.html">Talk to Us</a></li>
+            <li><a href="makers.html">Dream Makers</a></li>
+            <li><a href="notice.html">Notice&nbsp;</a></li>
+        </ul>
+    </nav>
+
+
+    <!--이미지 배너-->
+    <div class="slider">
+        <div class="slide">
+            <img src="banner1.png" alt="배너 1" width="1710px">
+        </div>
+        <div class="slide">
+            <img src="banner2.png" alt="배너 2" width="1710px">
+        </div>
+        <div class="slide">
+            <img src="banner3.png" alt="배너 3" width="1710px">
+        </div>
+    </div>
+    
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const slideCount = slides.length;
+ 
+        function showSlide(n) {
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[n].style.display = 'block';
+        }
+ 
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slideCount;
+            showSlide(currentSlide);
+        }
+ 
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+            showSlide(currentSlide);
+        }
+ 
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentSlide);
+            setInterval(nextSlide, 3000); // 3초마다 자동 슬라이드
+        });
+    </script>
+    </section>
+
+
+
+    <!--푸터-->
+    <footer>
+        
+        <p>
+            <span>창립자 : 달러구트 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>ㅣ
+            <span>창립 지원 : 이미예</span><br><br>
+            <span>찾아오는길 : 꿈의 도시 랜드마크를 찾으면, 어느새 도착!</span>
+        </p>
+        
+    </footer>
+
+</body>
+</html>
